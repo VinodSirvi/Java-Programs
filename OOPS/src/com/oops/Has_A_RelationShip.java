@@ -1,16 +1,16 @@
 package com.oops;
 
-class xyz {
+class Parent {
 	int a = 10;
 }
 
-class RDF {
+class Child {
 	
-	xyz a1;
+	Parent a1;
 	
 	void show ()  {
 		
-		a1 = new xyz() ;
+		a1 = new Parent() ;
 		System.out.println(a1.a);
 	}
 }
@@ -21,7 +21,7 @@ public class Has_A_RelationShip {
 	
 	public static void main(String[] args) {
 		
-		RDF b1 = new RDF();
+		Child b1 = new Child();
 		b1.show();
 	}
 }

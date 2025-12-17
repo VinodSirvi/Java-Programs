@@ -8,20 +8,20 @@ interface I2 {
 	int a = 10;
 }
 
-class Parent implements I2 {
+class Base implements I2 {
 	
 	public void show () {
 		
 		System.out.println("interface method");
 	}
 	
-	Parent() {
+	Base() {
 		System.out.println("class abs method");
 	}
 }
-class Child extends Parent {
+class Derived extends Base {
 	
-	Child () {
+      Derived () {
 		
 		System.out.println("class driver method call");
 	}
@@ -31,11 +31,11 @@ public class Interface {
 	
 	public static void main(String[] args) {
 		
-		I2 i = new Child();        // type 03
+		I2 i = new Derived();        // type 03
 		System.out.println(i.a);
 		
 		I2 i2 = null;             // type 04
-		i2 = new Child();
+		i2 = new Derived();
 		
 		i2.show();
  }

@@ -6,7 +6,7 @@ enum COURSE {
 	JAVA , HTML , CSS , SQL ;
 }
 
-class driver {
+class Driver {
 	
 	enum WEEKDAYS {
 		
@@ -19,7 +19,7 @@ public class Enum {
 	
     public static void main(String[] args) {
 		   
-    	           driver d1 = new driver();
+    	          // enum out of class 
     	           COURSE[]data = COURSE.values();
     	           
     	           for( COURSE val : data) {
@@ -27,9 +27,11 @@ public class Enum {
     	        	   System.out.println(val);
     	           }
     	           
-    	           
-    	           
-    	
+    	           // enum in parent class
+    	           Driver.WEEKDAYS day = Driver.WEEKDAYS.SUNDAY;
+    	           System.out.println(day);
+    	          
+    	            	
 	}
 
 }
