@@ -11,6 +11,7 @@ public class Person implements Serializable {
 	  String name;
 	  String Email = "abc123@gmail.com";
 	  transient int password = 1234;
+	  
      public static void main(String[] args) throws Exception{
 		Person p = new Person();
 		p.id = 100;
@@ -25,11 +26,12 @@ public class Person implements Serializable {
 		
 		System.out.println("===========serialization completed=========");
 		
-		System.out.println("====de-serialization started==========");
+		System.out.println("====de-serialization started===============");
 		
 		FileInputStream fis = new FileInputStream("person.ser");
 		ObjectInputStream ois = new ObjectInputStream(fis);
 		Object object = ois.readObject();
+		
 		Person p1 = (Person)object;
 		
 		System.out.println("id =>"+p1.id);
@@ -37,7 +39,7 @@ public class Person implements Serializable {
 		System.out.println("email =>"+p1.Email);
 		System.out.println("password =>"+p1.password);
 		ois.close();
-		System.out.println("=====================de - serialization complete");
+		System.out.println("================de - serialization complete==========");
 		
 		
 		
