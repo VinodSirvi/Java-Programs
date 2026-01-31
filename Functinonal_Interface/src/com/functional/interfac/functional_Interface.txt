@@ -1,0 +1,11 @@
+// functional interface in java is a interface that have only one abstract method 
+// we can define multiple default and static method in interface // thid feature is available in java 8 
+// types of functional interface 
+// 1. predicate interface 2. consumer interface 3. function interface 4. supplier interface 
+
+// 1. predicate interface ----
+//   abstract method --> public boolean test(t)
+// -- > return true or false value 
+
+// 2. function interface ----
+//  abstract method -->  

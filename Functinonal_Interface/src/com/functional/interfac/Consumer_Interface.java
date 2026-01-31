@@ -27,5 +27,6 @@ public class Consumer_Interface implements BiConsumer<Integer , Integer> {
 	  // BiConsumer
 	  BiConsumer<Integer , Integer> bic = new Consumer_Interface();
 	  bic.accept(10, 20);
+	 
 }
 }
